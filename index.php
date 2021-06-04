@@ -3,7 +3,7 @@
 ?>
 <!DOCTYPE html>
 <html>
-    
+    <!-- Ben Solo le best aka le Supreme Leader -->
     <head> <!-- partie non visible pour l'utilisateur-->
         <title>Acceuil</title>
         <meta charset="utf-8">
