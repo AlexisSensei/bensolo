@@ -1,5 +1,11 @@
 <?php
+    include('bdd-connect/connect.php');
     include('components/menu.php');
+?>
+<?php 
+    $show = $bdd->prepare("SELECT * FROM articles ORDER BY id DESC"); //sélectionne toute la table de données
+    $show->execute();
+    $articleList = $show->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +18,14 @@
     <title>Blog</title>
 </head>
 <body>
+    <?php foreach ($articleList as $l) { ?>
+            <div class="article">
+                <p><?= $l['title']?></p>
+                <p><?= $l['img']?></p>
+                <p><?= $l['txt']?></p>
+                <hr>
+            </div>
+        <?php } ?>
     <?php
         include('components/footer.php');
     ?>

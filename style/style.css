@@ -618,7 +618,7 @@ input{
     color:rgb(236, 236, 236, 0.9);
 }
 /*autres modifs concernant l'interface user*/
-.signup, .login, .blog, .profile, .admin{
+.signup, .login, .blog, .profile, .admin, .article{
     margin: 150px auto 0 auto;
     width: 800px;
     height: 400px;

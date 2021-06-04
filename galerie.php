@@ -10,6 +10,9 @@
     <body>
         <?php
             include('components/menu.php');
+            $file = file('verif-insultes.txt');
+            $load = array_map('trim', $file); //supprime les espaces du fichier txt
+            $verif = array_map("strtolower", $load); //supprime les majuscules de l'adresse email
         ?>
         <div id="myfilters">
             <button class="filter active" onclick="filterSelection('all')"> Show all</button>

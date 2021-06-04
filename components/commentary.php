@@ -17,8 +17,15 @@
     }
     //var_dump($bdd);
     if ($_POST){
-        $_POST['pseudo'] = addslashes($_POST['pseudo']);
-        $_POST['message'] = addslashes($_POST['message']);
+        $_POST['commentary'] = str_replace($verif, '****', $_POST['commentary']);
+        function valid_donnees($donnees){
+            $donnees = trim($donnees); //supprime les espaces
+            $donnees = stripslashes($donnees); //supprime les antislashes
+            $donnees = htmlspecialchars($donnees); //transformer les caractères spéciaux en éléments HTML
+            return $donnees;
+        }
+        $_POST['pseudo'] = valid_donnees($_POST['pseudo']);
+        $_POST['message'] = valid_donnees($_POST['message']);
         $bdd->exec("INSERT INTO commentaries (pseudo, commentary, date) VALUES ('$_POST[pseudo]', '$_POST[message]', NOW())");
         //NOW récupère la date et l'heure actuelle.
         //Je gère le soucis d'apostrophes :
