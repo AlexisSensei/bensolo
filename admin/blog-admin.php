@@ -17,21 +17,17 @@
         <?php
         ?>
         <form enctype="multipart/form-data" class="main blog" method="post">
-        <div>Write an Article</div>
-        <br><br>
-        <input type="text" name="title" required maxlength="20" placeholder="title">
-        <br><br>
-        <input type="file" name="img" required placeholder="insert your img here">
-        <br><br>
-        <textarea type="content" placeholder="your text"></textarea>
-        <br><br>
-        <input type="submit" value="Send">
-    </form>
+            <h2>Write an Article</h2>
+            <input type="text" name="title" required maxlength="20" placeholder="title">
+            <input type="file" name="img" required placeholder="insert your img here">
+            <textarea type="content" placeholder="your text"></textarea>
+            <input type="submit" value="Send">
+        </form>
         <?php
             include('../components/footer.php');
         ?>
-        <script class="scripts/darkmode.js"></script>
-        <script src="scripts/blog.js"></script>
+        <script class="../scripts/darkmode.js"></script>
+        <script src="../scripts/blog.js"></script>
     </body>
 </html>
 <?php 

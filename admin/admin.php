@@ -32,6 +32,7 @@
     <?php
         include('../components/footer.php');
     ?>
+    <script src="../scripts/home.js"></script>
     <script src="../scripts/darkmode.js"></script>
 </body>
 </html>

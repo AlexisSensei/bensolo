@@ -12,8 +12,7 @@
             include('components/menu.php');
         ?>
         <div id="myfilters">
-            <button class="filter active" onclick="filterSelection('all'
-            )"> Show all</button>
+            <button class="filter active" onclick="filterSelection('all')"> Show all</button>
             <button class="filter" onclick="filterSelection('seven')"> Episode 7</button>
             <button class="filter" onclick="filterSelection('eight')"> Episode 8</button>
             <button class="filter" onclick="filterSelection('nine')"> Episode 9</button>

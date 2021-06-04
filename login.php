@@ -1,5 +1,4 @@
 <?php
-  session_start();
   include('components/menu.php');
   include('components/auth.php');
   if (!isset($_SESSION['user_id']) && !isset($_SESSION['user_pseudo'])) { 
@@ -16,16 +15,14 @@
 </head>
 <body>
     <form class="main login" method="post">
-        <div>Connexion</div>
+        <h2>Connexion</h2>
         <?php if (isset($_GET['error'])) { ?>
 	  	<div class="alert" role="alert">
 			<?=htmlspecialchars($_GET['error']);?>
 		</div>
         <?php } ?>
         <input type="text" name="pseudo" placeholder="Pseudo">
-        <br><br>
         <input type="password" name="pass" placeholder="Password">
-        <br><br>
         <input type="submit" value="Connect">
         <p>Not Registered yet ?<a href="register.php">go here</a></p>
     </form>
@@ -33,6 +30,7 @@
         include('components/footer.php');
     ?>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/home.js"></script>
 </body>
 </html>
 <?php 

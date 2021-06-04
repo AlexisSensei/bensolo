@@ -45,19 +45,17 @@
 </head>
 <body>
     <form class="main signup" method="post">
-        <div>registration</div>
+        <h2>registration</h2>
         <input type="text" name="pseudo" required maxlength="20" placeholder="Pseudo">
-        <br><br>
         <input type="email" name="email" required placeholder="mail">
-        <br><br>
         <input type="password" name="pass" required minlength="12" placeholder="Password">
-        <br><br>
         <input type="submit" value="Register">
         <p>Already Registered ?<a href="login.php">go here</a></p>
     </form>
     <?php
         include('components/footer.php');
     ?>
+    <script src="scripts/home.js"></script>
     <script src="scripts/darkmode.js"></script>
 </body>
 </html>

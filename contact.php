@@ -1,5 +1,4 @@
 <?php 
-  session_start();
   include('bdd-connect/connect.php');
 ?>
 <!DOCTYPE html>

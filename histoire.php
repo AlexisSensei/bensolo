@@ -14,13 +14,13 @@
         <section class="E-histoire">
             <div class="main contenu-1">
                 <img id="comics" src="img/comics_BenSolo.jpeg" alt="origin">
-                <p class='histoire'>
+                <p class="txt">
                     Ben Solo was born in Hanna City on Chandrila on the day the Galactic Concordat was signed between the New Republic and the Galactic Empire, ending the Galactic Civil War. This day came about a year after the Battle of Endor, in which her parents, Princess Leia Organa and General Han Solo, led the Rebel Alliance forces to a decisive victory over the Empire. Among other things, this victory rid the galaxy of Emperor Sheev Palpatine and Leia Organa's biological father, the Sith Lord Darth Vader. While he was still in his mother's womb, Leia could sense his presence through the Force.
                     His first name was the nickname of the late Jedi Master Obi-Wan Kenobi, who was so named during his exile on Tatooine after the fall of the Jedi Order. During his youth, Ben's parents were both very active. Han Solo, who had left the Rebellion before the end of the Galactic Civil War, never stayed in one place for very long. Leia Organa, on the other hand, became a senator in the New Republic. Organa and Solo's strong character came into conflict more than once. These arguments coupled with their busy lives left young Ben with a deep sense of abandonment...
                 </p>
             </div>
             <div class="main contenu-2">
-                <p class="KnightsOfRen">The Knights of Ren included Kylo Ren, whom Supreme Leader Snoke referred to as the master of the Knights of Ren. As a member of the Knights of Ren, Kylo was not part of the official hierarchy of the First Order. This gave him great freedom of action within the military command, which had to deal with his presence when their goals conflicted. Kylo wore a silver-black battle helmet based on those worn by the Knights of Ren. Their ship was the Night Buzzard, a modified Oubliette-class transport.</p>
+                <p class="txt">The Knights of Ren included Kylo Ren, whom Supreme Leader Snoke referred to as the master of the Knights of Ren. As a member of the Knights of Ren, Kylo was not part of the official hierarchy of the First Order. This gave him great freedom of action within the military command, which had to deal with his presence when their goals conflicted. Kylo wore a silver-black battle helmet based on those worn by the Knights of Ren. Their ship was the Night Buzzard, a modified Oubliette-class transport.</p>
                 <img id="gif" src="img/knights_of_ren.gif" alt="master">
             </div>
             <div class="Films">

@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="style/style.css"> <!--intégration du CSS-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" type="text/javascript"></script>
     </head>   
-
     <body> <!--partie visible pour l'utilisateur-->
         <?php
             include('components/menu.php');
@@ -19,7 +18,7 @@
                 <video autoplay loop muted id="PRES">
                     <source src="img/ben_solo_vid.mp4">
                 </video>
-                <p>Ben Solo, a character played by actor Adam Driver since Star Wars 7: The Force Awakens released in our theaters in December 2015. This character coming straight from the galaxy far, far away that is Star Wars, is today part of one of the most appreciated characters by the fans who have both loved his development as well as the interpretation delivered by the actor. However, his fate decided for the last episode of the saga, Star Wars 9 The Rise of Skywalker, has divided the fans a lot and for most of them, they ask more than anything to have the chance to see him on screen again one day.
+                <p class="txt">Ben Solo, a character played by actor Adam Driver since Star Wars 7: The Force Awakens released in our theaters in December 2015. This character coming straight from the galaxy far, far away that is Star Wars, is today part of one of the most appreciated characters by the fans who have both loved his development as well as the interpretation delivered by the actor. However, his fate decided for the last episode of the saga, Star Wars 9 The Rise of Skywalker, has divided the fans a lot and for most of them, they ask more than anything to have the chance to see him on screen again one day.
                 </p>
             </article>
             <!--Frise chronologique-->
@@ -56,18 +55,18 @@
                 <!--Frise chronologique-->                   
                 </div>
             <div class="main cruiser">
-                <p class="explications">
+                <p class="txt">
                     The Finalizer was a Resurgent-class Star Destroyer produced by Kuat-Entralla Engineering for the First Order Navy. Its design was inspired by the Imperial-class star destroyers of the Galactic Empire. It was placed under the command of General Armitage Hux. Captain Phasma and the FN Division were stationed aboard the Finalizer.
                 </p>
                 <img id="croiseur" src="img/Finalizer.webp" alt="croiseur de Guerre">
             </div>
             <div class="main navette">
                 <img id="Shuttle" src="img/KyloRenCommandShuttle.webp" alt="navette de Ben">
-                <p class="shuttle">The command shuttle was Upsilon class and used by Kylo Ren, who was a member of the Knights of Ren and the First Order, about thirty years after the Battle of Endor. His ship led a group of atmospheric assault landers to the Star Destroyer Finalizer.</p>
+                <p class="txt">The command shuttle was Upsilon class and used by Kylo Ren, who was a member of the Knights of Ren and the First Order, about thirty years after the Battle of Endor. His ship led a group of atmospheric assault landers to the Star Destroyer Finalizer.</p>
             </div>
             <div class="endvideo">
                 <div class="endcontent">
-                    <h3>Teaser Star Wars TROS</h3>
+                    <h3>Teaser Star Wars tros</h3>
                 </div>   
                 <div class="endcontent">
                     <iframe id="teaser" width="780" height="460" src="https://www.youtube.com/embed/o4k12QPAh_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        

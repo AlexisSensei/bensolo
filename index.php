@@ -1,6 +1,3 @@
-<?php 
-  session_start();
-?>
 <!DOCTYPE html>
 <html>
     <!-- Ben Solo le best aka le Supreme Leader -->
