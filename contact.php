@@ -1,7 +1,6 @@
 <?php 
   session_start();
   include('bdd-connect/connect.php');
-  if (isset($_SESSION['user_id']) && isset($_SESSION['user_pseudo'])) { 
 ?>
 <!DOCTYPE html>
 <html>
@@ -66,9 +65,3 @@
         <script src="scripts/contact.js"></script>
     </body>
 </html>
-<?php 
-}else 
-{
-   header("Location: index.php");
-}
-?>

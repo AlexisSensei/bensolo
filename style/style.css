@@ -2,6 +2,13 @@
     font-family: "StarWars";
     src: url("../star_jedi/starjedi/Starjedi.ttf") format('truetype');
 }
+a{
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+a:hover{
+    color: var(--main-starwars-color);
+}
 * {/* Modification appliquée sur toutes nos pages*/
     margin: 0;
     padding: 0;
@@ -12,6 +19,7 @@
     --main-dark-background-color: black;
     --main-lightmode-background-color: rgb(236, 236, 236, 0.9);
     --main-text-color:black;
+    --main-starwars-color:rgba(233, 233, 10, 0.952);
 }
 .dark-mode{
     background-image: url("../img/Background2.jpeg");
@@ -58,17 +66,22 @@ nav{
     padding: 8px 5px 8px 5px;
     border-radius: 8px;
     margin-left: 675px;
-    text-decoration: none;
     border: none;
     cursor: pointer;
 }
 nav a{
-    text-decoration: none;
     padding: 0 12px 12px 12px;
     color: rgb(236, 236, 236, 0.9);
 }
-#buttons a:hover {
-    color: rgba(233, 233, 10, 0.952);
+
+button {
+    color: var(--main-text-color);
+    padding: 8px 5px 8px 5px;
+    border-radius: 8px;
+    border: none;
+}
+button:hover {
+    background-color: var(--main-dark-background-color);
 }
 .SWicon {
 	-webkit-transition: margin 600ms;
@@ -344,13 +357,7 @@ article{
     font-size: 18px;
 }
 .Rbutton{
-    padding: 10px 5px 10px 5px;
     position: sticky;
-    border-radius: 5px;
-    border: none;
-    text-decoration: none;
-    background-color: var(--main-lightmode-background-color);
-    color: var(--main-text-color);
 }
 .movies img{
     width: 400px;
@@ -415,7 +422,6 @@ user-select: none;
 .filter{
     top: 0%;
     border:none;
-    text-decoration: none;
     padding: 10px 5px 10px 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -502,10 +508,9 @@ user-select: none;
     flex-direction: column;
     gap: 10px;
 }
-.post{
+.post, #delete a{
     font-size: 14px;
     border: none;
-    text-decoration: none;
 }
 .post:hover{
     transition: 0.4s;
@@ -518,7 +523,6 @@ user-select: none;
     gap: 5px;
 }
 .com a{
-    text-decoration: none;
     font: bold;
 }
 .com a:hover{
@@ -640,6 +644,27 @@ input{
 .signup div, .login div, .blog div {
     font-family: 'StarWars';
 }
+.interface{
+    margin: 200px auto 0 auto;
+    width: 1000px;
+    border-radius: 15px;
+}
+.interface h2{
+    font-family: 'StarWars';
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px 5px 10px 5px;
+}
+#delete{
+    display: block;
+    justify-content: flex-end;
+}
 
 @media (min-width: 1366px){/* Faire en sorte que le menu burger s'affiche seulement pour les formats mobiles*/
     #buttons{
@@ -667,7 +692,6 @@ input{
     #buttons a{
         padding-top: 40px; 
         display: flex;
-        text-decoration: none;
         font-size: 25px;
         color: white;
     }
@@ -770,8 +794,7 @@ input{
     }
     #buttons a{
         padding: 60px 0px 0px 0px;
-        display: flex;
-        text-decoration: none;
+        display: flex;       
         font-size: 40px;
         color: white;
     }

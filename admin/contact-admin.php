@@ -4,7 +4,7 @@
     
 <?php if ($_SESSION['role'] == 'admin') { ?>
     <?php 
-            $show = $bdd->prepare("SELECT * FROM contact ORDER BY date DESC"); //sélectionne toute la table de données dans l'ordre décroissant
+            $show = $bdd->prepare("SELECT * FROM contact ORDER BY date DESC"); //sélectionne toute la table de données
             $show->execute();
             $contactList = $show->fetchAll(PDO::FETCH_ASSOC);
     ?>
@@ -22,10 +22,10 @@
                 <h3>Request</h3>
                 <?php foreach ($contactList as $l) { ?>
                     <div class="request">
-                        <p><?= $l['fi_name'] . " " . $l['fa_name'] . '<hr>'; ?></p>
+                        <p><?= $l['fi_name'] . " " . $l['fa_name']; ?></p>
                         <p><?= $l['email'] . '<br>' . 'Msg : ' . $l['msg']; ?></p>
+                        <a href="../components/delete-request.php?id=<?= $l['id']; ?>">DELETE</a>
                         <hr>
-                        <a href="../components/delete-request.php?id=<?= $l['id']; ?>">SUPPRIMER</a>
                     </div>
                 <?php } ?>
             </div>

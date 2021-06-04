@@ -15,40 +15,40 @@
             <div class="main contenu-1">
                 <img id="comics" src="img/comics_BenSolo.jpeg" alt="origin">
                 <p class='histoire'>
-                    Ben Solo vit le jour à Hanna City sur Chandrila le jour où le Concordat Galactique fut signé entre la Nouvelle République et l'Empire Galactique mettant ainsi fin à la Guerre Civile Galactique. Cette journée se produisit environ un an après la bataille d'Endor, affrontement au cours duquel ses parents, la Princesse Leia Organa et le Général Han Solo, menèrent les forces de l'Alliance Rebelle vers une victoire décisive sur l'Empire. Cette victoire permit entre autre de débarrasser la galaxie de l'Empereur Sheev Palpatine et du père biologique de Leia Organa, le Seigneur Sith Dark Vador. Alors qu'il se trouvait encore dans le ventre de sa mère, Leia pouvait sentir sa présence grâce à la Force.
-                    Son prénom était le surnom du défunt Maître Jedi Obi-Wan Kenobi qui s'appela ainsi lors de son exil sur Tatooine après la chute de l'Ordre Jedi. Pendant sa jeunesse, les parents de Ben eurent tous les deux une vie très active. Han Solo qui avait quitté les rangs de la Rébellion avant la fin de la Guerre Civile Galactique ne restait jamais très longtemps au même endroit. Leia Organa, quant à elle, devint une sénatrice de la Nouvelle République. Le caractère bien entier d'Organa et Solo entrèrent plus d'une fois en conflit. Ces disputes couplées à leurs vies plus que chargées laissèrent le jeune Ben avec un profond sentiment d'abandon...
+                    Ben Solo was born in Hanna City on Chandrila on the day the Galactic Concordat was signed between the New Republic and the Galactic Empire, ending the Galactic Civil War. This day came about a year after the Battle of Endor, in which her parents, Princess Leia Organa and General Han Solo, led the Rebel Alliance forces to a decisive victory over the Empire. Among other things, this victory rid the galaxy of Emperor Sheev Palpatine and Leia Organa's biological father, the Sith Lord Darth Vader. While he was still in his mother's womb, Leia could sense his presence through the Force.
+                    His first name was the nickname of the late Jedi Master Obi-Wan Kenobi, who was so named during his exile on Tatooine after the fall of the Jedi Order. During his youth, Ben's parents were both very active. Han Solo, who had left the Rebellion before the end of the Galactic Civil War, never stayed in one place for very long. Leia Organa, on the other hand, became a senator in the New Republic. Organa and Solo's strong character came into conflict more than once. These arguments coupled with their busy lives left young Ben with a deep sense of abandonment...
                 </p>
             </div>
             <div class="main contenu-2">
-                <p class="KnightsOfRen">Les Chevaliers de Ren incluaient Kylo Ren, que le Suprême Leader Snoke qualifiait de maître des Chevaliers de Ren. En tant que membre des Chevaliers de Ren, Kylo ne faisait pas partie de la hiérarchie officielle du Premier Ordre. Il jouissait ainsi d'une grande liberté d'action au sein du commandement militaire qui devait composer avec sa présence quand leurs objectifs étaient contradictoires. Kylo portait un casque de combat noir argenté basé sur ceux portés par les Chevaliers de Ren. Leur vaisseau était le Night Buzzard, un transport de classe Oubliette modifié.</p>
+                <p class="KnightsOfRen">The Knights of Ren included Kylo Ren, whom Supreme Leader Snoke referred to as the master of the Knights of Ren. As a member of the Knights of Ren, Kylo was not part of the official hierarchy of the First Order. This gave him great freedom of action within the military command, which had to deal with his presence when their goals conflicted. Kylo wore a silver-black battle helmet based on those worn by the Knights of Ren. Their ship was the Night Buzzard, a modified Oubliette-class transport.</p>
                 <img id="gif" src="img/knights_of_ren.gif" alt="master">
             </div>
             <div class="Films">
-                <h2>Apparitions</h2>
+                <h2>Appearances</h2>
                 <div class="movies">
                     <img src="img/posterSW7.jpeg">
                     <article class="main resume">
-                        <p id="synop">Plus de 30 ans après la bataille d'Endor, qui a vu la chute de l'Empire galactique, la paix et la nouvelle république sont encore fragiles. Les nostalgiques de l'ancien régime, rassemblés sous la bannière du Premier Ordre, tentent de reprendre la main sur la force. A leur tête, le sinistre Kylo Ren lance des attaques pirates aux confins de la galaxie...</p>
+                        <p id="synop">More than 30 years after the Battle of Endor, which saw the fall of the Galactic Empire, peace and the new Republic are still fragile. Nostalgic supporters of the old regime, gathered under the banner of the First Order, are trying to regain control of the force. At their head, the sinister Kylo Ren launches pirate attacks to the farthest reaches of the galaxy...</p>
                     </article>
-                    <button class="Rbutton" onclick="showText()">En Savoir Plus</button>
+                    <button class="Rbutton" onclick="showText()">Learn More</button>
                 </div>
                 <div class="movies">
                     <img src="img/posterSW8.jpeg">
                     <article class="main resume">
-                        <p id="synop2">Le Premier Ordre étend ses tentacules aux confins de l'univers, poussant la Résistance dans ses retranchements. Il est impossible de se sauver à la vitesse de la lumière avec cet ennemi continuellement aux trousses. Cela n'empêche pas Finn et ses camarades de tenter d'identifier une brèche chez leur adversaire. Pendant ce temps, Rey se trouve toujours sur la planète Ahch-To pour convaincre Luke Skywalker de lui enseigner les rudiments de la Force...</p>
+                        <p id="synop2">The First Order reaches out to the farthest reaches of the universe, pushing the Resistance to its limits. It's impossible to run away at the speed of light with this enemy constantly on your tail. But that doesn't stop Finn and his comrades from trying to find a way through their adversary. Meanwhile, Rey is still on the planet Ahch-To trying to convince Luke Skywalker to teach her the basics of the Force...</p>
                     </article>
-                    <button class="Rbutton" onclick="showText2()">En Savoir Plus</button>
+                    <button class="Rbutton" onclick="showText2()">Learn More</button>
                 </div>
                 <div class="movies">
                     <img src="img/posterSW9.jpeg">
                     <article class="main resume">
-                        <p id="synop3">Un an a passé depuis que Kylo Ren a tué Snoke, le Leader suprême et pris sa place. Bien que largement décimée, la Résistance est prête à renaître de ses cendres. Rey, Poe, Leia et leurs alliés se préparent à reprendre le combat. Mais ils vont devoir faire face à un vieil ennemi : l'empereur Palpatine...</p>
+                        <p id="synop3">A year has passed since Kylo Ren killed Supreme Leader Snoke and took his place. Though largely decimated, the Resistance is ready to rise from the ashes. Rey, Poe, Leia and their allies prepare to fight again. But they will have to face an old enemy: Emperor Palpatine...</p>
                     </article>
-                    <button class="Rbutton" onclick="showText3()">En Savoir Plus</button>
+                    <button class="Rbutton" onclick="showText3()">Learn More</button>
                 </div>
             </div>
             <div class="personnages">
-                <h2>Personnages liés à Ben</h2> 
+                <h2>Characters connect to Ben</h2> 
             </div>
             <div class="G-M">
                 <div class="P">

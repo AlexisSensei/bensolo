@@ -1,8 +1,12 @@
 <?php 
-  session_start();
   include('../bdd-connect/connect.php');
   include('../components/menu.php');
   if ($_SESSION['role'] == 'admin') { ?>
+<?php 
+    $users = $bdd->prepare("SELECT * FROM users ORDER BY 'id'");
+    $users->execute();
+    $userList = $users->fetchAll(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +18,16 @@
     <title>Admin</title>
 </head>
 <body>
-    <div class="main admin">
+    <div class="main interface">
         <h2>Master <?= $_SESSION['user_pseudo']?> welcome !</h2>
+        <?php foreach ($userList as $u) { ?>
+        <div class="user">
+            <h4>USER</h4>
+            <p>id :<?= $u['id'] ." ". "Pseudo :" . $u['pseudo']; ?></p>
+            <p><?= $u['email'] . '<br>' . 'Role : ' . $u['role']; ?></p>
+            <button id="delete"><a href="../components/delete-user.php?id=<?= $u['id']; ?>">DELETE</a></button>
+        </div>
+    <?php } ?>
     </div>
     <?php
         include('../components/footer.php');

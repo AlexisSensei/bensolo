@@ -2,7 +2,7 @@
 <html>
     
     <head> <!-- partie non visible pour l'utilisateur-->
-        <title>Présentation</title>
+        <title>Presentation</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/style.css"> <!--intégration du CSS-->
@@ -19,54 +19,55 @@
                 <video autoplay loop muted id="PRES">
                     <source src="img/ben_solo_vid.mp4">
                 </video>
-                <p>Ben Solo, personnage interprété par l’acteur Adam Driver depuis Star Wars 7 : The Force Awakens sorti dans nos salles en décembre 2015. Ce personnage nous venant tout droit de la galaxie lointaine, très lointaine qui est Star Wars, fait aujourd’hui parti d’un des personnages le plus apprécié par les fans qui ont à la fois adorer son développement ainsi que l’interprétation délivré par l’acteur. Toutefois, son sort décidé pour le dernier épisode de la saga, Star Wars 9 The Rise of Skywalker, a beaucoup divisé les fans et pour la plupart d’entre eux, ils demandent plus que tout de pouvoir avoir la chance de le revoir à l’écran un jour.</p>
+                <p>Ben Solo, a character played by actor Adam Driver since Star Wars 7: The Force Awakens released in our theaters in December 2015. This character coming straight from the galaxy far, far away that is Star Wars, is today part of one of the most appreciated characters by the fans who have both loved his development as well as the interpretation delivered by the actor. However, his fate decided for the last episode of the saga, Star Wars 9 The Rise of Skywalker, has divided the fans a lot and for most of them, they ask more than anything to have the chance to see him on screen again one day.
+                </p>
             </article>
             <!--Frise chronologique-->
             <section class="element"></section>
                 <div class="frise">
-                    <h1 class="name">Frise Chronologique</h1>
+                    <h1 class="name">Timeline</h1>
                     <div class="contenu">
                         <div class="main txt">
                             <h2>9 AV .IS</h2>
-                            <p>Naissance sur Chandrilla</p>
+                            <p>Born in Chandrilla</p>
                         </div>
                     </div>
                     <div class="contenu">
                     <div class="main txt">
                             <h2>6 AV .IS</h2>
-                            <p>Détruit le temple Jedi de son maître Luke Skywalker</p>
+                            <p>Destroy the Jedi Temple of his Master, Luke Skywalker</p>
                         </div>
                     </div>
                     <div class="contenu">
                         <div class="main txt">
                             <h2>0 AV .IS</h2>
-                            <p>Tue son père Han Solo et Tue Snoke et devient le Suprème Leader du Premier Ordre</p>
+                            <p>Kill his father Han Solo and the Supreme Leader Snoke and become the Leader of the First Order</p>
                         </div>
                     </div>
                     <div class="contenu">
                         <div class="main txt">
                             <h2>1 AP .IS</h2>
-                            <p>Découvre Exegol et l'Empereur Palpatine</p>
+                            <p>Discover Exegol and the Emperor Palpatine</p>
                         </div>
                     </div>
                     <div class="main echelle">
-                        <p><strong> IS </strong> signifie "Incident Starkiller", qui est la nouvelle base pour la timeline</p> 
+                        <p><strong> IS </strong> means "Incident Starkiller", which is the base of Star Wars Timeline</p> 
                     </div>
                 <!--Frise chronologique-->                   
                 </div>
             <div class="main cruiser">
-                <p class="explications">Le Finalizer était un Destroyer Stellaire de classe Resurgent produit par l'Ingénierie Kuat-Entralla pour le compte de la Marine du Premier Ordre. Sa conception était inspirée des Destroyers Stellaires de classe Impérial de l'Empire Galactique.
-                    Il était placé sous le commandement du Général Armitage Hux. Le Capitaine Phasma et la Division FN étaient stationnées à bord du Finalizer.
-                    </p>
+                <p class="explications">
+                    The Finalizer was a Resurgent-class Star Destroyer produced by Kuat-Entralla Engineering for the First Order Navy. Its design was inspired by the Imperial-class star destroyers of the Galactic Empire. It was placed under the command of General Armitage Hux. Captain Phasma and the FN Division were stationed aboard the Finalizer.
+                </p>
                 <img id="croiseur" src="img/Finalizer.webp" alt="croiseur de Guerre">
             </div>
             <div class="main navette">
                 <img id="Shuttle" src="img/KyloRenCommandShuttle.webp" alt="navette de Ben">
-                <p class="shuttle">La navette de commandement était classe Upsilon et utilisée par Kylo Ren, qui était membre des Chevaliers de Ren et du Premier Ordre, environ trente ans après la bataille d'Endor. Son vaisseau a conduit un groupe d'atterrisseurs d'assaut atmosphérique vers le Star Destroyer Finalizer.</p>
+                <p class="shuttle">The command shuttle was Upsilon class and used by Kylo Ren, who was a member of the Knights of Ren and the First Order, about thirty years after the Battle of Endor. His ship led a group of atmospheric assault landers to the Star Destroyer Finalizer.</p>
             </div>
             <div class="endvideo">
                 <div class="endcontent">
-                    <h3>Teaser Star Wars tros   </h3>
+                    <h3>Teaser Star Wars TROS</h3>
                 </div>   
                 <div class="endcontent">
                     <iframe id="teaser" width="780" height="460" src="https://www.youtube.com/embed/o4k12QPAh_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
