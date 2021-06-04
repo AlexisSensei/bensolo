@@ -1,0 +1,856 @@
+@font-face{
+    font-family: "StarWars";
+    src: url("../star_jedi/starjedi/Starjedi.ttf") format('truetype');
+}
+* {/* Modification appliquée sur toutes nos pages*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Méthodologie de calcul de la taille de l'élément en fonction de sa width*/
+}
+:root{
+    --main-darkmode-color: rgba(45, 85, 160, 0.952);
+    --main-dark-background-color: black;
+    --main-lightmode-background-color: rgb(236, 236, 236, 0.9);
+    --main-text-color:black;
+}
+.dark-mode{
+    background-image: url("../img/Background2.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--main-darkmode-color);
+}
+.main{
+    background-color: var(--main-lightmode-background-color);
+    color: var (var(--main-text-color));
+}
+
+#BenSoloVid {/* Vidéo Page d'accueil*/
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* définir des calques */
+}
+body { /* applique un background, une police au texte sur toutes les pages du site*/
+    background-image: url("../img/Background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*début CSS Barre des menus/Menu burger*/
+#Menu{
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.5s;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    display: none;
+    padding: 15px;
+}
+#colorMode{
+    padding: 8px 5px 8px 5px;
+    border-radius: 8px;
+    margin-left: 675px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+nav a{
+    text-decoration: none;
+    padding: 0 12px 12px 12px;
+    color: rgb(236, 236, 236, 0.9);
+}
+#buttons a:hover {
+    color: rgba(233, 233, 10, 0.952);
+}
+.SWicon {
+	-webkit-transition: margin 600ms;
+	-moz-transition: margin 600ms;
+	transition: margin 600ms;
+	cursor: pointer;
+}
+.SWicon .sabre {
+	display: block;
+    color: white;
+	width: 50px;
+	height: 3px;
+	margin: 15px;
+	border-right: 35px solid;
+	border-left: 8px solid;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
+	-moz-transition-property: -moz-transform, margin, border-right-color, box-shadow;
+	transition-property: transform, margin, border-right-color, box-shadow;
+	-webkit-transition-duration: 600ms;
+	-moz-transition-duration: 600ms;
+	transition-duration: 600ms;
+}
+.SWicon .sabre:nth-of-type(1) { /*nth-of-type permet de selectionner seulement un seul élément et donc d'appliquer séparemment du contenu*/
+	-webkit-transition: opacity 300ms;
+	-moz-transition: opacity 300ms;
+	transition: opacity 300ms;
+}
+.SWicon .sabre:nth-of-type(2) {
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+/*Menu devient touch avec le javascript*/
+.touch .sabre:nth-of-type(1) {
+	opacity: 0;
+}
+
+.touch .sabre:nth-of-type(2) {
+	margin-left: 22px;
+	-webkit-transform: rotate(-137deg) translateY(-24px);
+	-moz-transform: rotate(-137deg) translateY(-24px);
+	-ms-transform: rotate(-137deg) translateY(-24px);
+	-o-transform: rotate(-137deg) translateY(-24px);
+	transform: rotate(-137deg) translateY(-24px);
+}
+
+.touch .sabre:nth-of-type(3) {
+	margin-left: 0.5em;
+	-webkit-transform: rotate(-42deg);
+	-moz-transform: rotate(-42deg);
+	-ms-transform: rotate(-42deg);
+	-o-transform: rotate(-42deg);
+	transform: rotate(-42deg);
+}
+
+.touch .SWicon:hover .sabre:nth-of-type(2) {
+	border-right-color: #e9b8b9;
+	box-shadow: 6.4px 0 9.6px 1.6px rgba(205,40,44,0.75);
+}
+.touch .SWicon:hover .sabre:nth-of-type(3) {
+	border-right-color: #ddf1da;
+	box-shadow: 6.4px 0 9.6px 1.6px blue;
+}
+/*fin CSS Barre des menus/Menu burger*/
+.headt{
+    font-family: "StarWars";
+    letter-spacing: 6px;
+    color: rgb(236, 236, 236, 0.9);
+    font-size: 35px;
+    margin-top: 100px;
+    text-align: center;
+}
+.headt h1:hover{
+    color: rgba(233, 233, 10, 0.952);
+    transition: 0.3s;
+    transform: scale(1.1)
+}
+footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(236, 236, 236, 0.9);
+}
+/*Debut  CSS Page Présentation*/
+.element{
+    width: 1400px;
+    margin: 0 auto;
+}
+.endcontent, .name{
+    font-family: "StarWars";
+    letter-spacing: 1px;
+}
+article, .cruiser, .navette{
+    border-radius: 10px;
+    font-size: 23px;
+}
+article{
+    display: flex;
+    justify-content: center; /*axe horizontal*/
+    align-items: center; /*axe vertical*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 25px;
+    margin-top: 100px;
+    margin-bottom: 75px;
+}
+#PRES{
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+.Ex{
+    padding-left: 20px;
+}
+/*Debut CSS Frise*/
+.frise{
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.frise::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgba(233, 233, 10, 0.952);
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    margin-left: -3px; 
+}
+.name{
+    display: flex;
+    justify-content: center;
+    color:rgba(233, 233, 10, 0.952);
+    font-size: 30px;
+}
+.contenu{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+.contenu{
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+}
+.contenu::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: rgba(233, 233, 10, 0.952);
+    border: 4px solid black;
+    top: 35px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.txt, .echelle{
+    padding: 20px 30px;
+    opacity: 60%;
+    position: relative;
+    border-radius: 6px;
+}
+.txt:hover{
+    transform: scale(1.05);
+    transition-timing-function: ease-out;
+    transition-duration: 1s;
+    opacity: 100%;
+}
+/*Fin CSS Frise*/
+#croiseur{
+    border-radius: 10px;
+    width: 600px;
+    height: 350px;
+    transform: scale(1.05);
+}
+.cruiser{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center; /*axe horizontal*/
+    align-items: center; /*axe vertical*/
+    text-align: right;
+    gap: 30px;
+}
+.navette{
+    display: flex;
+    justify-content: center; /*axe horizontal*/
+    align-items: center; /*axe vertical*/
+    text-align: left;
+    margin-top: 70px;
+    gap: 25px;
+}
+#Shuttle{
+    width: 200px;
+}
+#Shuttle:hover{
+    transform: scale(1.2);
+    transition: 1.2s;
+}
+.endvideo{
+    margin-top: 70px;
+}
+.endcontent { /* position endcontent */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color:rgba(233, 233, 10, 0.952);
+}
+/*Fin  CSS Page Présentation*/
+
+/*CSS Page Histoire*/
+.E-histoire{
+    width: 1200px;
+    margin: 0 auto;
+}
+#comics{
+    width: 450px;
+}
+.contenu-1{
+    margin-top: 100px;
+}
+.contenu-1, .contenu-2{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /*axe horizontal*/
+    align-items: center; /*axe vertical*/
+    gap: 30px;
+    font-size: 21.5px;
+    margin-bottom: 70px;
+}
+.contenu-2{
+    text-align: right;
+}
+#gif, #comics{
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+.Films h2, .personnages{
+    font-family: "StarWars";
+    letter-spacing: 1px;
+}
+.Films h2{
+    text-align: center;
+    color:rgba(233, 233, 10, 0.952);
+    font-size: 30px;
+}
+.movies{
+    margin-top: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center; /*axe horizontal*/
+    align-items: center;
+    gap: 30px;
+}
+.resume{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+}
+#synop, #synop2, #synop3{
+    display: none;
+    font-size: 18px;
+}
+.Rbutton{
+    padding: 10px 5px 10px 5px;
+    position: sticky;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    background-color: var(--main-lightmode-background-color);
+    color: var(--main-text-color);
+}
+.movies img{
+    width: 400px;
+    box-shadow: 5px 10px 10px rgba(233, 233, 10, 0.952);
+}
+.personnages {
+    color:rgba(233, 233, 10, 0.952);
+    font-size: 25px; 
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.G-M {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.P img {
+    display: flex;
+    justify-content: center;
+    max-height: 420px;
+}
+.avant, .apres {
+color: rgb(236, 236, 236, 0.9);
+cursor: pointer;
+position: absolute;
+top: 50%;
+margin-top: -22px;
+padding: 16px;
+font-weight: bold;
+font-size: 25px;
+transition: 0.6s ease;
+user-select: none;
+}
+.apres {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.avant {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.avant:hover,.apres:hover {
+  background-color: grey;
+  opacity: 0.2;
+}
+/*Fin CSS Page Histoire*/
+
+/* début CSS page galerie*/
+.galerie{
+    padding: 30px 0 50px;
+}
+#myfilters{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.filter{
+    top: 0%;
+    border:none;
+    text-decoration: none;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.filter:hover{
+    transition: 0.4s;
+    background-color: var(--main-dark-background-color);
+    color: var(--main-darkmode-color);
+}
+.active{
+    background-color: var(--main-dark-background-color);
+    color: var(--main-darkmode-color);
+}
+.petite, .fullscreen{
+    cursor: pointer;
+}
+.episode{
+    display: none;
+}
+.galerie::after{
+    display: table;
+    clear: both;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.case{
+    width: 50%;
+    box-shadow: 5px 8px 7px rgba(233, 233, 10, 0.952);
+    opacity: 0.6;
+}
+.case img{
+    width: 100%;
+}
+.case:hover{
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.fullscreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullscreen img{
+    opacity: 1;
+    width: 70%;
+    border-radius: 8px;
+    box-shadow: 5px 8px 7px rgba(233, 233, 10, 0.952);
+}
+.space-commentary{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    width: 1100px;
+    border-radius: 15px;
+    gap: 20px;
+}
+.space-commentary h2{
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: 'StarWars';
+}
+.space-commentary h2:hover{
+    transition: 0.6s;
+    color: var(--main-darkmode-color);
+
+}
+.comm{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post{
+    font-size: 14px;
+    border: none;
+    text-decoration: none;
+}
+.post:hover{
+    transition: 0.4s;
+    background-color: black;
+    color: var(--main-darkmode-color);
+}
+.com{
+    padding: 15px 10px 15px 10px;
+    border-radius: 15px;
+    gap: 5px;
+}
+.com a{
+    text-decoration: none;
+    font: bold;
+}
+.com a:hover{
+    color: var(--main-darkmode-color);
+}
+/* fin CSS page galerie */
+
+/* début CSS page contact */
+label:hover{
+    color: blue;
+}
+.parallax img{
+    padding-top: 80px;
+    width: 1200;
+    height: 600px;
+    border-radius: 15px;
+}
+.parallax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: -29;
+    color: white;
+    font-family: 'StarWars';
+}
+.formulaire{
+    z-index: -28;
+    margin: 200px auto 0 auto;
+    width: 800px;
+    height: 80vh;
+    border-radius: 15px;
+}
+.contact{
+    gap: 40px;
+}
+.contact h1{
+    font-family: "StarWars";
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 15px 0 30px 0;
+}
+.FormContact, .signup, .login, .blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+label{
+    font-family: 'StarWars';
+    letter-spacing: 1px;
+}
+.Form {
+    padding-bottom: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    width: auto;
+    height: 25px;
+    border-radius: 5px;
+    border-color: none;
+}
+.FormButton  {
+    padding: 30px 10px 30px 10px;
+    display: flex;
+    justify-content: center;
+}
+#send {
+    font-size: 15px;
+    border: none;
+    color: var(--main-text-color);
+    border-radius: 5px;
+}
+#send:hover{
+    transition: 0.4s;
+    background-color: var(--main-dark-background-color);
+    color: var(--main-darkmode-color);
+}
+/* fin CSS page contact */
+.inprogress { /* page blog pas finie du tout*/
+    font-family: "StarWars";
+    letter-spacing: 3px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:rgb(236, 236, 236, 0.9);
+}
+/*autres modifs concernant l'interface user*/
+.signup, .login, .blog, .profile, .admin{
+    margin: 150px auto 0 auto;
+    width: 800px;
+    height: 400px;
+    border-radius: 15px;
+}
+.admin-request{
+    margin: 200px auto 0 auto;
+    width: 800px;
+    height: 700px;
+    border-radius: 15px;
+}
+.admin-request h3{
+    font-size: 20px;
+    font-family: 'StarWars';
+    text-align:center;
+    letter-spacing: 1px;
+}
+.request{
+    margin: 0 auto;
+    width: 500px;
+    padding: 10px 5px 10px 5px;
+}
+.signup div, .login div, .blog div {
+    font-family: 'StarWars';
+}
+
+@media (min-width: 1366px){/* Faire en sorte que le menu burger s'affiche seulement pour les formats mobiles*/
+    #buttons{
+        display: block;
+    }
+    .SWicon{
+        display: none;
+    }
+}
+@media screen and (max-width: 812px) /*Format iPhone X*/ 
+{
+    .SWicon{
+        z-index: 4;
+        top: 0%;
+        position: fixed;
+    }
+    /*Param Burger*/ 
+    #buttons{
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        position: fixed;
+        background-color: black;
+    }
+    #buttons a{
+        padding-top: 40px; 
+        display: flex;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+    }
+    /*Param Burger*/ 
+    /*Ne pas afficher la vidéo sur mobile*/ 
+    #BenSoloVid {
+        width: auto;
+        height: auto;
+    }
+    /*Remplacer la vidéo par une image fixe*/ 
+    .accueil {
+        background-image: url(../img/Kylo.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .headt {
+        margin-top: 150px;
+        font-size: 20px;
+    }
+    /*Page présentation*/ 
+    .element{
+        width: 300px;
+    }
+    article, .cruiser, .navette{
+        flex-direction: column;
+        text-align: center;
+        font-size: 15px;
+    }
+    .name{
+        font-size: 22px;
+    }
+    #PRES{
+        position: relative;
+        width: 300px;
+    }
+    #croiseur{
+        width: 300px;
+        height: 220px;
+    }
+    .endcontent{
+        font-size: 15px;
+    }
+    #teaser{
+        width: 250px;
+        height: 250px;
+    }
+    /*Page Histoire*/
+    .E-histoire{
+        width: 300px;
+    }
+    #comics, #gif{
+        width: 290px;
+    }
+    .contenu-1, .contenu-2{
+        flex-direction: column;
+        text-align: center;
+        font-size: 15px;
+    }
+    .Films img{
+        width: 300px;
+    }
+    .movies{
+        flex-direction: column;
+    }
+    .personnages {
+        text-align: center;
+    }
+    /*Page Galerie*/
+    .galerie{
+        flex-direction: column;
+    }
+    .case{
+        width: 300px;
+    }
+    /*Page Contact*/
+    .formulaire{
+        width: 300px;
+    }
+    .Form{
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1366px) /*Format iPad/iPad Pro*/
+{
+    .SWicon{
+        z-index: 4;
+        top: 0%;
+        position: fixed;
+    }
+    /*Param Burger*/ 
+    #buttons{
+        width: 50%;
+        height: 100%;
+        z-index: 3;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.85);
+        margin-top: 15px;
+    }
+    #buttons a{
+        padding: 60px 0px 0px 0px;
+        display: flex;
+        text-decoration: none;
+        font-size: 40px;
+        color: white;
+    }
+    /*Param Burger*/ 
+    /*Ne pas afficher la vidéo sur mobile*/ 
+    #BenSoloVid {
+        display: none;
+    }
+    /*Remplacer la vidéo par une image fixe*/ 
+    .accueil {
+        background-image: url(../img/Kylo.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .headt {
+        margin-top: 250px;
+        font-size: 35px;
+    }
+    /*Page présentation*/ 
+    .element{
+        width: 900px;
+    }
+    article, .cruiser, .navette{
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+    }
+    #PRES{
+        position: relative;
+        width: 900px;
+    }
+    #croiseur{
+        width: 900px;
+        height: 520px;
+    }
+    .endcontent{
+        font-size: 25px;
+    }
+    #teaser{
+        width: 850px;
+        height: 850px;
+    }
+    /*Page Histoire*/
+    .E-histoire, #comics, #gif{
+        width: 700px;
+    }
+    .contenu-1, .contenu-2{
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+        gap: 40px;
+    }
+    .Films img{
+        width: 600px;
+    }
+    .movies{
+        flex-direction: column;
+    }
+    .personnages {
+        font-size: 100%;
+        zoom: 100%;
+    }
+    /*Page Galerie*/
+    .galerie{
+        flex-direction: column;
+    }
+    .case{
+        width: 900px;
+    }
+    /*Page Contact*/
+    .contact h1{
+        font-size: 50px;
+    }
+    .formulaire{
+        width: 900px;
+    }
+    .Form{
+        font-size: 30px;
+        width: 850px;
+    }
+}
