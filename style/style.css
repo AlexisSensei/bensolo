@@ -625,6 +625,9 @@ input{
     border-radius: 15px;
     gap: 50px;
 }
+.img-article{
+    width: 200px;
+}
 .main h2{
     font-family: 'StarWars';
 }

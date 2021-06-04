@@ -19,9 +19,9 @@
 </head>
 <body>
     <?php foreach ($articleList as $l) { ?>
-            <div class="article">
+            <div class="main article">
                 <p><?= $l['title']?></p>
-                <p><?= $l['img']?></p>
+                <img class="img-article" src="<?= $l['img']?>" alt="sabre">
                 <p><?= $l['txt']?></p>
                 <hr>
             </div>
